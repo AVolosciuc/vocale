@@ -1,115 +1,64 @@
-// const first_number = prompt("first number");
-// const operator = prompt("mathematical opertor");
-// const second_number = prompt("Second_number");
-
-// if (operator === "+") {
-//     console.log(Number first_number + second_number);
-// } else if (operator === "-") {
-//     console.log(Number first_number - second_number);
-// } else if (operator === "*") {
-//     console.log(Number first_number * second_number);
-// } else if (operator === "/") {
-//     console.log(Number first_number / second_number);
-// } else if (operator === "**") {
-//     console.log(Number first_number ** second_number);
-// } else {
-//     alert("erorr")
+// //ex1
+// function firstFunc(grade) {
+//     return grade * 33.8 
 // }
-const arr = [];
-// console.log(arr.length)
+// let fr = firstFunc(19)
+// console.log(fr );
 
-const arr1 =[1, 2, 3, 4, 5, "saalut", true];
-// console.log(arr1.length)
+// //ex2
 
-let obj = {
-    name: "Ion",
-    age: 2,
-}
+// function ariadreptFunc(a , b) {
+//     return a * b
+// }
 
-const array = [
-    { name: "Ion", age: 2 },
-    { name: "Ion", age: 25},
-    {ame: "Ion", age: 10}
-]
+// let aria = ariadreptFunc(5, 5)
+// console.log(aria);
 
-// console.log (array[1].name);
+// //ex3
 
-// array.forEach(element => {
-//     console.log(element.name.includes("Ion"))
-// });
-    
-function name(params) {
-    params.forEach(element => {
-        console.log(element);
-    });
-}
+// function inversFunc(d) {
+//     return -d    
+// }
 
-// name(array);
-// name(arr1);
+// let reverse = inversFunc (-6)
+// console.log(reverse);
 
-function name1() 
-{
-    console.log("salut")
-    
-}
+// let sir = ['a','b','c','d','e']
+// let i = 0
+// while (i < sir.length) {
+//     console.log(sir[i]);
+//     i++
+// }
 
-// name1();
-// name1();
+let arrLetters = ['a','a','a','e','u','p','o','r','s']
+let vocals = ['a','e','i','o','u','y','w']
 
-function caculeatar(numarUnu, numarDoi, numarTrei) {
-    let score = null
-    score = numarUnu + numarDoi + numarTrei
-    console.log(score)
-}
-
-// caculeatar(1,2,3)
-let user = []
-array.forEach(element => {
-    if (element.age > 20) {
-        user.push(element)
-        console.log(element)
-    }
-    else {
-        console.log("err")
-    }
-});
-console.log(user)
-
-let new_user = {
-    name: "MaMaNeA",
-    age: 85,
-    gen: "f",
-    copil: {
-        name: "tioma",
-        age: 2.6666666666,
-        gen: "m"
-    }
-}
-// new_user.oras = "Chisiniov"
-// new_user.oras= "Balti"
-// console.log(new_user)
-
-
-
-// user.push(new_user)
-// user.unshift(new_user)
-// user.pop()
-// user.shift()
-// console.log(user)
-
-let userFeminin = []
-function genFiltre(array) {
-    array.forEach(element => {
-        if (element.gen === "m") {
-            user.push(element)
+function Findvocal(x) {
+    let i = 0
+    while (i < vocals.length) {
+        if (vocals[i] === x) {
+            return i;
         }
-        
-        if(element.gen === "f"){
-            userFeminin.push(element)
-        }
-    });
+        i++ 
+    }
 }
 
-genFiltre(array)
-console.log(user)
-console.log(userFeminin)
+let position = Findvocal('u')
+
+function vocalsFunc() {
+    let i = 0;
+    let count = 0;
+    while (i < arrLetters.length) {
+        let currentletter = arrLetters[i];
+        let variable = Findvocal(currentletter)
+        if (variable !== undefined) {
+            count++
+        }
+        // if (arrLetters[i])
+        // console.log(arrLetters[i]);
+        i++
+    }
+    console.log(count);
+}
+
+vocalsFunc ()
