@@ -30,35 +30,34 @@
 //     i++
 // }
 
-let arrLetters = ['a','a','a','e','u','p','o','r','s']
-let vocals = ['a','e','i','o','u','y','w']
+// let arrLetters = ['a','a','a','e','u','p','o','r','s']
+// let vocals = ['a','e','i','o','u','y','w']
 
-function Findvocal(x) {
-    let i = 0
-    while (i < vocals.length) {
-        if (vocals[i] === x) {
-            return i;
-        }
-        i++ 
-    }
-}
+// function Findvocal(x) {
+//     let i = 0
+//     while (i < vocals.length) {
+//         if (vocals[i] === x) {
+//             return i;
+//         }
+//         i++ 
+//     }
+// }
+// let position = Findvocal('u')
 
-let position = Findvocal('u')
+// function vocalsFunc() {
+//     let i = 0;
+//     let count = 0;
+//     while (i < arrLetters.length) {
+//         let currentletter = arrLetters[i];
+//         let variable = Findvocal(currentletter)
+//         if (variable !== undefined) {
+//             count++
+//         }
+//         // if (arrLetters[i])
+//         // console.log(arrLetters[i]);
+//         i++
+//     }
+//     console.log(count);
+// }
 
-function vocalsFunc() {
-    let i = 0;
-    let count = 0;
-    while (i < arrLetters.length) {
-        let currentletter = arrLetters[i];
-        let variable = Findvocal(currentletter)
-        if (variable !== undefined) {
-            count++
-        }
-        // if (arrLetters[i])
-        // console.log(arrLetters[i]);
-        i++
-    }
-    console.log(count);
-}
-
-vocalsFunc ()
+// vocalsFunc ()
