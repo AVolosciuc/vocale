@@ -3,8 +3,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border: 1px solid rgb(147, 147, 147);
+    margin-top: 20px;
+    border-radius: 20px;
 }
 
-.democlass {
-    color: red;
-  }
+.info_content {
+    padding: 0 100px 10px 100px;
+}
